@@ -25,6 +25,7 @@ public class controller {
     @Autowired
     private IPersonaService persoServ;
     
+    
     @GetMapping ("/persona/ver")
     @ResponseBody
     public List<Persona> verPersonas(){
