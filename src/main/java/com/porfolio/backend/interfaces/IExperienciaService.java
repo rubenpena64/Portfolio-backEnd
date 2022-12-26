@@ -2,7 +2,6 @@
 package com.porfolio.backend.interfaces;
 
 import com.porfolio.backend.model.Experiencia;
-import com.porfolio.backend.model.Persona;
 import java.util.List;
 
 /**
