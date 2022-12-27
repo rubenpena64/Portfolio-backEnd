@@ -33,30 +33,31 @@ public class SkillController {
     
     @GetMapping ("/skill/ver")
     @ResponseBody
-    public List<Skill> verPersonas(){
+    public List<Skill> verSkill(){
         return SkiServ.verSkill();
     }   
     
     @PostMapping ("/skill/crear")
-    public void agregarPersona(@RequestBody Skill ski){
+    public void agregarSkill(@RequestBody Skill ski){
         SkiServ.crearSkill(ski);
     }
     
     @DeleteMapping ("/skill/borrar/{id}")
-    public void borrarExpe(@PathVariable Long id){
+    public void borrarSkill(@PathVariable Long id){
         SkiServ.borrarSkill(id);   
     }
     
      @PutMapping ("/skill/editar/{id}")
-    public void editarExpe (@PathVariable Long id,
+    public void editarSkill (@PathVariable Long id,
                             @RequestBody Skill skiModi){
         
         Skill ski= SkiServ.buscarSkill(id);
+        if(ski != null)
+        {
         ski=skiModi;
-        ski.setId(id);
-        
+        ski.setId(id);     
         SkiServ.crearSkill(ski);
-        
+        }
     }
     
     

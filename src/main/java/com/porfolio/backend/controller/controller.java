@@ -44,16 +44,14 @@ public class controller {
     
     @PutMapping ("/persona/editar/{id}")
     public void editarPersona (@PathVariable Long id,
-                               @RequestParam("nombre") String nNombre,
-                               @RequestParam("apellido") String nApellido,
-                               @RequestParam("foto") String nFoto){
-        
+                                @RequestBody Persona perModi){
         Persona per= persoServ.buscarPersona(id);
-        per.setNombre(nNombre);
-        per.setApellido(nApellido);
-        per.setFoto(nFoto);
-        
+        if(per != null)
+        {
+            per=perModi;
+            per.setId(id);      
         persoServ.crearPersona(per);
+        }
     }
     
     @GetMapping ("/persona/ver/miperfil")

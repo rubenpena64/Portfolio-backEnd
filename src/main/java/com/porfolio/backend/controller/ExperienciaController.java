@@ -52,11 +52,13 @@ public class ExperienciaController {
                            @RequestBody Experiencia expeModi){
         
         Experiencia expe= ExpeServ.buscarExperiencia(id);
-        expe.setAnios(expeModi.getAnios());
-        expe.setEmpresa(expeModi.getEmpresa());
-        expe.setDescrip(expeModi.getDescrip());
-        
-        ExpeServ.crearExperiencia(expe);
+        if(expe !=null){
+            expe=expeModi;
+            expe.setId(id);  
+            ExpeServ.crearExperiencia(expe);
+        }
+       
+     
         
     }
      
