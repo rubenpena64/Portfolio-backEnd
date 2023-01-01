@@ -21,13 +21,15 @@ public class Proyecto {
     @NotNull
     private String titulo;
     @NotNull
-    private String descrip;   
+    private String descrip; 
+    private String link;
     private String foto;
 
-    public Proyecto(String titulo, String descrip, String foto) {
+    public Proyecto(String titulo, String descrip, String foto, String link) {
         this.titulo = titulo;
         this.descrip = descrip;
         this.foto = foto;
+        this.link = link;
     }
 
     public Proyecto() {
