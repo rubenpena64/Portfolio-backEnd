@@ -22,6 +22,7 @@ com\porfolio\backend\controller\controller.class
 com\porfolio\backend\interfaces\IEducacionService.class
 com\porfolio\backend\controller\AcercaController.class
 com\porfolio\backend\service\PersonaService.class
+com\porfolio\backend\WebConfig.class
 com\porfolio\backend\model\Experiencia.class
 com\porfolio\backend\model\Educacion.class
 com\porfolio\backend\model\Proyecto.class
