@@ -26,6 +26,12 @@ public class controller {
     private IPersonaService persoServ;
     
     
+     @GetMapping ("/")
+    @ResponseBody
+    public String responderRaiz(){
+        return "<p><h3>Ruben Peña</h3></p><p><h4>Porfolio personal</h4></p>";
+    }   
+    
     @GetMapping ("/persona/ver")
     @ResponseBody
     public List<Persona> verPersonas(){
