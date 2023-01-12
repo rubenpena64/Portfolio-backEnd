@@ -12,3 +12,19 @@ Se dasarrolló con el patrón MVC y la estructura de packages propuesto por la d
 - com.porfolio.backend.repository.
 - com.porfolio.backend.interfaces.
 - com.porfolio.backend.service.
+
+## Error de Cors en el navegador y de servicio no dispopnible en Postman
+
+Aunque algunos días no falla, algunas veces Firefox da error de Cors en Koyeb: localmente funciona perfectamente por lo que es dificil de hacer un debug.
+
+Probé de todas las maneras segun la documentación de Spring, en el foro de Argentina programa y otros, con el mismo resultado:
+
+- La configuracion global
+- La configuracion en cada @RestController
+- La configuración en cada función del @RestController
+- En todas las maneras perimitiendo cualquier origen y método
+
+Cada vez que aparece este error al entrar en el dirección donde está alojada la api, en vez de decir "Ruben Peña - Porfolio personal" que es el mapping para "/" da diferentes mensajes de error como "servicio no dispònible".
+Una vez que contesta correctamente, a los pocos segundos empieza a funcionar en el front end.
+
+Lamentablemente no pude encontrar una solución definitiva.
