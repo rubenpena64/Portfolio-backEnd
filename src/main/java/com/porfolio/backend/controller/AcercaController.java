@@ -19,7 +19,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@CrossOrigin(origins = "https://porfoliofrontruben.web.app")
+
+@CrossOrigin(origins = {"https://porfoliofrontruben.web.app", "http://localhost:4200"})
+
 public class AcercaController {
     @Autowired
     private IAcercaService AceServ;

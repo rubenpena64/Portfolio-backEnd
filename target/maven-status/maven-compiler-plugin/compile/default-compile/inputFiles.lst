@@ -11,13 +11,10 @@ C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\
 C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\backend\interfaces\IEducacionService.java
 C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\backend\interfaces\IExperienciaService.java
 C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\backend\controller\ProyectoController.java
-C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\backend\repository\IPersonaRepository.java
 C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\backend\repository\ISkillRepository.java
 C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\backend\interfaces\IProyectoService.java
-C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\backend\model\Persona.java
 C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\backend\service\SkillService.java
 C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\backend\controller\ExperienciaController.java
-C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\backend\interfaces\IPersonaService.java
 C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\backend\controller\EducacionController.java
 C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\backend\model\Educacion.java
 C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\backend\model\Login.java
@@ -28,7 +25,6 @@ C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\
 C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\backend\service\LoginService.java
 C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\backend\controller\controller.java
 C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\backend\service\ExperienciaService.java
-C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\backend\service\PersonaService.java
 C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\backend\controller\SkillController.java
 C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\backend\service\EducacionService.java
 C:\Users\Ruben\OneDrive\Yo programo\portfolioBackEnd\src\main\java\com\porfolio\backend\repository\ILoginRepository.java

@@ -5,8 +5,6 @@
 package com.porfolio.backend.controller;
 
 import com.porfolio.backend.interfaces.ISkillService;
-import com.porfolio.backend.model.Experiencia;
-
 import com.porfolio.backend.model.Skill;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Ruben
  */
 @RestController
-@CrossOrigin(origins = "https://porfoliofrontruben.web.app")
+@CrossOrigin(origins = {"https://porfoliofrontruben.web.app", "http://localhost:4200"})
 public class SkillController {
     
     @Autowired
