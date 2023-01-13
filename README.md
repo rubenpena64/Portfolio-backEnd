@@ -24,7 +24,7 @@ Probé de todas las maneras segun la documentación de Spring, en el foro de Arg
 - La configuración en cada función del @RestController
 - En todas las maneras perimitiendo cualquier origen y método
 
-Cada vez que aparece este error al entrar en el dirección donde está alojada la api, en vez de decir "Ruben Peña - Porfolio personal" que es el mapping para "/" da diferentes mensajes de error como "servicio no dispònible".
+Cada vez que aparece este error al entrar en el dirección donde está alojada la api, en vez de decir "Ruben Peña - Porfolio personal" que es el mapping para "/" da diferentes mensajes de error como "servicio no dispònible" o "upstream connect error or disconnect/reset before headers. reset reason: connection termination"
 Una vez que contesta correctamente, a los pocos segundos empieza a funcionar en el front end.
 
 Lamentablemente no pude encontrar una solución definitiva.
