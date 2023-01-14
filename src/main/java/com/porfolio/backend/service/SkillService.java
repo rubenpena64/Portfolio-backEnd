@@ -8,6 +8,7 @@ import com.porfolio.backend.interfaces.ISkillService;
 import com.porfolio.backend.model.Skill;
 import com.porfolio.backend.repository.ISkillRepository;
 import java.util.List;
+import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +17,7 @@ import org.springframework.stereotype.Service;
  * @author Ruben
  */
 @Service
+@Transactional
 public class SkillService implements ISkillService {
     
     @Autowired

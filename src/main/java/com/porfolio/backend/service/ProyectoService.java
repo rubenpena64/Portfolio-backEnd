@@ -5,6 +5,7 @@ import com.porfolio.backend.interfaces.IProyectoService;
 import com.porfolio.backend.model.Proyecto;
 import com.porfolio.backend.repository.IProyectosRepository;
 import java.util.List;
+import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +14,7 @@ import org.springframework.stereotype.Service;
  * @author Ruben
  */
 @Service
+@Transactional
 public class ProyectoService implements IProyectoService{
     @Autowired
     public IProyectosRepository proyeRepo;

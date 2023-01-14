@@ -7,6 +7,7 @@ package com.porfolio.backend.service;
 import com.porfolio.backend.interfaces.IAcercaService;
 import com.porfolio.backend.model.Acerca;
 import com.porfolio.backend.repository.IAcercaRepository;
+import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +16,7 @@ import org.springframework.stereotype.Service;
  * @author Ruben
  */
 @Service
+@Transactional
 public class AcercaService implements IAcercaService {
     @Autowired
     public IAcercaRepository acercaRepo;

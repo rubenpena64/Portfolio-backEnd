@@ -6,7 +6,6 @@ package com.porfolio.backend.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
