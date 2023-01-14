@@ -4,6 +4,8 @@ package com.porfolio.backend.controller;
 import com.porfolio.backend.interfaces.IAcercaService;
 import com.porfolio.backend.model.Acerca;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,10 +30,14 @@ public class AcercaController {
       
     @GetMapping ("/acerca/ver")
     @ResponseBody
+      public ResponseEntity<Acerca> Acerca(){
+         return new ResponseEntity(AceServ.verAcerca(),HttpStatus.OK);
+    }
+    /*
     public Acerca verAcerca(){
         return AceServ.verAcerca();
     }     
-    
+    */
     @PutMapping ("/acerca/editar/{id}")
     public void editarAcerca (@PathVariable Long id,
                                 @RequestBody Acerca aceModi){

@@ -8,6 +8,8 @@ import com.porfolio.backend.interfaces.IEducacionService;
 import com.porfolio.backend.model.Educacion;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,8 +32,9 @@ public class EducacionController {
     
     @GetMapping ("/edu/ver")
     @ResponseBody
-    public List<Educacion> verEdu(){
-        return EduServ.verEducacion();
+    //public List<Educacion> verEdu(){
+    public ResponseEntity<List<Educacion>> list(){
+         return new ResponseEntity(EduServ.verEducacion(),HttpStatus.OK);
     }
     
     @PostMapping ("/edu/crear")

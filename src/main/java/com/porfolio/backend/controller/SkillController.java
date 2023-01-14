@@ -8,6 +8,8 @@ import com.porfolio.backend.interfaces.ISkillService;
 import com.porfolio.backend.model.Skill;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,10 +33,14 @@ public class SkillController {
     
     @GetMapping ("/skill/ver")
     @ResponseBody
+        public ResponseEntity<List<Skill>> list(){
+         return new ResponseEntity(SkiServ.verSkill(),HttpStatus.OK);
+    }
+    /*
     public List<Skill> verSkill(){
         return SkiServ.verSkill();
     }   
-    
+    */
     @PostMapping ("/skill/crear")
     public void agregarSkill(@RequestBody Skill ski){
         SkiServ.crearSkill(ski);
