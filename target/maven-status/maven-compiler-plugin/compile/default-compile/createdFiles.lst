@@ -12,13 +12,11 @@ com\porfolio\backend\repository\ISkillRepository.class
 com\porfolio\backend\model\Login.class
 com\porfolio\backend\controller\LoginController.class
 com\porfolio\backend\service\SkillService.class
-com\porfolio\backend\service\AcercaService.class
 com\porfolio\backend\service\ExperienciaService.class
 com\porfolio\backend\service\EducacionService.class
 com\porfolio\backend\controller\EducacionController.class
 com\porfolio\backend\controller\controller.class
 com\porfolio\backend\interfaces\IEducacionService.class
-com\porfolio\backend\controller\AcercaController.class
 com\porfolio\backend\WebConfig.class
 com\porfolio\backend\model\Experiencia.class
 com\porfolio\backend\model\Educacion.class
@@ -29,6 +27,3 @@ com\porfolio\backend\repository\IEducacionRepository.class
 com\porfolio\backend\service\LoginService.class
 com\porfolio\backend\BackendApplication.class
 com\porfolio\backend\interfaces\IProyectoService.class
-com\porfolio\backend\repository\IAcercaRepository.class
-com\porfolio\backend\interfaces\IAcercaService.class
-com\porfolio\backend\model\Acerca.class

@@ -1,8 +1,8 @@
 
 package com.porfolio.backend.controller;
 
-import com.porfolio.backend.interfaces.IAcercaService;
-import com.porfolio.backend.model.Acerca;
+//import com.porfolio.backend.interfaces.IAcercaService;
+//import com.porfolio.backend.model.Acerca;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  *
  * @author Ruben
- */
+
 
 
 @RestController
@@ -37,10 +37,11 @@ public class AcercaController {
     public Acerca verAcerca(){
         return AceServ.verAcerca();
     }     
-    */
+    
     @PutMapping ("/acerca/editar/{id}")
     public void editarAcerca (@PathVariable Long id,
                                 @RequestBody Acerca aceModi){
        AceServ.crearAcerca(aceModi);        
     }    
 }
+ */
