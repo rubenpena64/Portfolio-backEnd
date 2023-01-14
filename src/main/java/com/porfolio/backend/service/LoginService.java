@@ -16,7 +16,6 @@ import org.springframework.stereotype.Service;
  * @author Ruben
  */
 @Service
-@Transactional
 public class LoginService implements ILoginService {
     @Autowired
     public ILoginRepository logRepo;

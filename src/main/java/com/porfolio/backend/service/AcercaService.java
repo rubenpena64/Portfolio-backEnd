@@ -16,7 +16,6 @@ import org.springframework.stereotype.Service;
  * @author Ruben
  */
 @Service
-@Transactional
 public class AcercaService implements IAcercaService {
     @Autowired
     public IAcercaRepository acercaRepo;

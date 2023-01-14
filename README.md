@@ -31,5 +31,8 @@ Cada vez que aparece este error al entrar en el dirección donde está alojada l
 - "upstream connect error or disconnect/reset before headers. reset reason: connection failure, transport failure reason: delayed connect error: 111"
 Una vez que contesta correctamente, en un par de minutos empieza a funcionar en el front end.
 
-Lamentablemente no pude encontrar una solución. El debug es muy dificil ya que el problema surge solo en el hosting y no en mi PC, y a veces funciona correctamente el día entero; tampoco se si el problema es el backend con el front end o con la BD. Seguiré probando distintas cosas para encontrar una solución
+Lamentablemente no pude encontrar una solución. El debug es muy dificil ya que el problema surge solo en el hosting y no en mi PC, y a veces funciona correctamente el día entero; tampoco se si el problema es el backend con el front end o con la BD. Seguiré probando distintas cosas para encontrar una solución.
+Parece ser que lo que se "cuelga" es la conexion con la BD. Lamentablemente no tengo logs en el servicio gratuito de Clever CloudLa 
+La anotation @Transactional empeoro todo hasta el momento
+
 

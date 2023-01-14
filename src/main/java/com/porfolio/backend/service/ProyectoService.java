@@ -14,7 +14,6 @@ import org.springframework.stereotype.Service;
  * @author Ruben
  */
 @Service
-@Transactional
 public class ProyectoService implements IProyectoService{
     @Autowired
     public IProyectosRepository proyeRepo;

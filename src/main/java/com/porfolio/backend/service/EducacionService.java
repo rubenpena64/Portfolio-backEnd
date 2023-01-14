@@ -17,7 +17,6 @@ import org.springframework.stereotype.Service;
  * @author Ruben
  */
 @Service
-@Transactional
 public class EducacionService implements IEducacionService {
     
     @Autowired
