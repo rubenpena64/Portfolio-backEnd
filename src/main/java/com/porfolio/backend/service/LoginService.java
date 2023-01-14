@@ -19,14 +19,16 @@ import org.springframework.stereotype.Service;
 public class LoginService implements ILoginService {
     @Autowired
     public ILoginRepository logRepo;
-   
+    
+   /*
     @Override
     public void crearUser(Login logi) {
         long id=1;
         logi.setId(id);
         logRepo.save(logi);       
     }
-
+    */
+    
     @Override
     public Login buscarUser(Long id) {
        return logRepo.findById(id).orElse(null);

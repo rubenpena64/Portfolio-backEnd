@@ -18,11 +18,7 @@ public class Skill {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
-
     private String habilidad; 
-    
-    
     private String nivel;
 
     public Skill() {

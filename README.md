@@ -13,6 +13,7 @@ Se dasarrolló con el patrón MVC y la estructura de packages propuesto por la d
 - com.porfolio.backend.interfaces.
 - com.porfolio.backend.service.
 
+
 ## Error de Cors en el navegador y servicio no dispopnible con Postman
 
 Aunque a veces ha funcionado perfectamente durante 10 horas otras veces el navegador da error de Cors en Koyeb: localmente funciona perfectamente.
@@ -29,10 +30,17 @@ Cada vez que aparece este error al entrar en el dirección donde está alojada l
 - "502 - Service unavailable"
 - "upstream connect error or disconnect/reset before headers. reset reason: connection termination"
 - "upstream connect error or disconnect/reset before headers. reset reason: connection failure, transport failure reason: delayed connect error: 111"
+
 Una vez que contesta correctamente, en un par de minutos empieza a funcionar en el front end.
 
 Lamentablemente no pude encontrar una solución. El debug es muy dificil ya que el problema surge solo en el hosting y no en mi PC, y a veces funciona correctamente el día entero; tampoco se si el problema es el backend con el front end o con la BD. Seguiré probando distintas cosas para encontrar una solución.
 Parece ser que lo que se "cuelga" es la conexion con la BD. Lamentablemente no tengo logs en el servicio gratuito de Clever CloudLa 
-La anotation @Transactional empeoro todo hasta el momento
 
+## Intentos de solucionar el problema 
+
+- Quitar una conexión de servicio (la del componente acerca) y dejar cinco en total: 4 componentes y el login
+- Agregar la annotation @Transactional empeoró mucho todo
+- Hacer que los mapeos de los listados iniciales respondan con un HttpResponse
+- El log de Koyeb dice com.zaxxer.hikari.pool.PoolBase : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1182d578 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value, por lo que se setea spring.datasource.hikari.max-lifetime: 120000 según lo sugerido en una pagina
+	
 

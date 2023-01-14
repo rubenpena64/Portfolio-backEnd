@@ -17,16 +17,16 @@ import lombok.Setter;
 @Getter @Setter
 @Entity
 public class Login {    
-    @Id    
-    private long id = 1;
-    @NotBlank
+    @Id        
+    private Long id ;
+    
     private String nombre;
     @NotBlank
     private String pass;
 
     public Login(String nombre, String pass) {
         this.nombre = nombre;
-        this.pass = pass;
+        this.pass = pass;       
     }
 
     public Login() {
