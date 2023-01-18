@@ -42,5 +42,7 @@ Parece ser que lo que se "cuelga" es la conexion con la BD. Lamentablemente no t
 - Agregar la annotation @Transactional empeoró mucho todo
 - Hacer que los mapeos de los listados iniciales respondan con un HttpResponse
 - El log de Koyeb dice com.zaxxer.hikari.pool.PoolBase : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1182d578 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value, por lo que se setea spring.datasource.hikari.max-lifetime: 120000 según lo sugerido en una pagina
+
+Finalmente dejo de hacer cambios, ya que creo que cada vez funciona peor y no lo voy a solucionar sin la ayuda de alguien con mas conocimientos y experiencia. Creo que el problema está en la base de datos. El último clean and build costo muchisimo porque al compilar me decía que el servidor no aceptaba mas de 5 conexiones simultaneas. Tuve que cambiar el password para que se cerraran las conexiones
 	
 
