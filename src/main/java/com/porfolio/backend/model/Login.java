@@ -18,7 +18,7 @@ import lombok.Setter;
 @Entity
 public class Login {    
     @Id        
-    private Long id ;
+    private long id=1 ;
     
     private String nombre;
     @NotBlank
@@ -26,7 +26,8 @@ public class Login {
 
     public Login(String nombre, String pass) {
         this.nombre = nombre;
-        this.pass = pass;       
+        this.pass = pass;
+        this.id=1;
     }
 
     public Login() {

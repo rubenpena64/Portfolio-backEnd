@@ -12,6 +12,6 @@ import com.porfolio.backend.model.Login;
  */
 public interface ILoginService {
    
-   //public void crearUser(long logi);  
-   public Login buscarUser(Long id);
+   public void crearUser(Login logi);  
+   public Login buscarUser(long id);
 }

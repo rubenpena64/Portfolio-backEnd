@@ -39,11 +39,11 @@ public class LoginController {
     }
 
    }
-    /*
+   
     @PutMapping ("/login/crear")
     public void lgNew(@RequestBody Login logi) {
        logSer.crearUser(logi);
     }
-    */
+    
 }
     
